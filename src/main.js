@@ -17,7 +17,12 @@ export const toRem = (px, base = 16) => {
     try {
         let tempPx = px;
         let value = "0";
-        if (typeof px === 'string' || px instanceof String) tempPx = tempPx.replace('px', '');
+        if (typeof px === 'string' || px instanceof String) {
+            const checkPxUnit =  px.split('px');
+            const checkRemUnit =  px.split('rem');
+            if(checkRemUnit.length > 1) return px;
+            if(checkPxUnit.length > 1) tempPx = checkPxUnit[0];
+        }
         tempPx = Number(tempPx);
         if(tempPx >= 1) {
             value = (1 / base) * tempPx + 'rem';
