@@ -5,7 +5,8 @@
   "type": "module",
   "main": "compressed/main.js",
   "scripts": {
-    "minify": "npx minify-all-cli -s 'src' -d 'compressed'"
+    "minify": "npx minify-all-cli -s 'src' -d 'compressed'",
+    "tests": "node --test test/main.js"
   },
   "homepage": "https://simplybuilder.github.io",
   "repository": {
