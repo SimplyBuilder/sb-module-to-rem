@@ -4,7 +4,7 @@
 !.github/**
 
 !compressed/
-!compressed/main.js
+!compressed/**
 
 !.gitignore
 
@@ -16,6 +16,9 @@
 
 !src/
 !src/**
+
+!test/
+!test/**
 
 **/*~
 **/*.log
