@@ -1,0 +1,11 @@
+{
+  "name": "@jamilservices/sb-module-to-rem",
+  "description": "Simply Builder Module - convert pixels to rem",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/main.min.js",
+  "scripts": {
+    "minify": "npx minify-js --output src/main.min.js src/main.js"
+  }
+}
