@@ -1,0 +1,1 @@
+"use strict";var r=(t,n=16)=>{try{let r=t,e="0";return("string"==typeof t||t instanceof String)&&(r=r.replace("px","")),r=Number(r),e=1<=r?1/n*r+"rem":e}catch(r){console.error(r)}return t};export{r as toRem};
