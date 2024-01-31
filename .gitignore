@@ -3,6 +3,9 @@
 !.github/
 !.github/**
 
+!compressed/
+!compressed/main.js
+
 !.gitignore
 
 !README.md
