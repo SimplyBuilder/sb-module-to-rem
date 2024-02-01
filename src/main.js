@@ -1,35 +1,49 @@
 "use strict";
 
 /**
- * Converts pixel values to rem units.
- *
- * This function takes a pixel value and an optional base value (defaulting to 16) to convert the pixel value
- * into rem units. It handles both string and numeric inputs for the pixel value. If an error occurs during the
- * conversion process, it logs the error and returns the original pixel value.
- *
- * @function toRem
- * @param {number|string} px - The pixel value to convert. Can be a number or a string ending in 'px'.
- * @param {number} [base=16] - The base pixel size for the conversion, typically the font-size of the document. Defaults to 16.
- * @returns {string} - The converted value in rem units, or the original pixel value if an error occurs.
+ * Contains functions for converting various length units to pixels.
+ * @type {Object.<string, Function>}
  */
-
-export const toRem = (px, base = 16) => {
+const types = {
+    'px': (data) => parseFloat(data.tempLength),
+    'em': (data) => parseFloat(data.tempLength) * data.base,
+    'pt': (data) => parseFloat(data.tempLength) * 1.333
+};
+/**
+ * Converts various length units (px, em, pt) to rem units.
+ *
+ * This function takes a length value in pixels, ems, or points, and converts it to rem units.
+ * It allows specifying the number of decimal places in the returned value.
+ * If the unit of the input length is not recognized, it returns the original value.
+ *
+ * @param {string|number} length - The length value to convert, which can be a number or a string with a unit (px, em, pt, rem).
+ * @param {number} [decimal=4] - The number of decimal places to include in the returned value. Defaults to 4.
+ * @returns {string} - The converted length in rem units, or the original length if the unit is not recognized or on error.
+ */
+export const toRem = (length, decimal= 4) => {
     try {
-        let tempPx = px;
+        if (typeof length === "undefined") return "0";
+        const base = 16;
+        let tempLength = length.toString();
         let value = "0";
-        if (typeof px === 'string' || px instanceof String) {
-            const checkPxUnit =  px.split('px');
-            const checkRemUnit =  px.split('rem');
-            if(checkRemUnit.length > 1) return px;
-            if(checkPxUnit.length > 1) tempPx = checkPxUnit[0];
+
+        const limitDecimal = Number(decimal) >= 1 ? Number(decimal) : 4;
+
+        const unit = tempLength.replace(/[\d.]/g, '');
+        if (unit === 'rem') return tempLength === "0rem" ? "0" : tempLength;
+        if (types[unit]) {
+            tempLength = types[unit]({tempLength, base});
+        } else if (unit) {
+            console.warn(`Unit '${unit}' not recognized. Returning original value.`);
+            return length;
         }
-        tempPx = Number(tempPx);
-        if(tempPx >= 1) {
-            value = (1 / base) * tempPx + 'rem';
-        }
-        return value;
+
+
+        if (tempLength > 0) value = ((1 / base) * tempLength);
+        if (value > 0) return Number(parseFloat(value).toFixed(limitDecimal)) + 'rem';
+        return "0";
     } catch (err) {
         console.error(err);
     }
-    return px;
+    return length;
 };
