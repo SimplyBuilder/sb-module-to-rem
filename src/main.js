@@ -34,8 +34,10 @@ export const toRem = (length, decimal= 4) => {
         if (types[unit]) {
             tempLength = types[unit]({tempLength, base});
         } else if (unit) {
-            console.warn(`Unit '${unit}' not recognized. Returning original value.`);
-            return length;
+            if(Number(tempLength.replace(unit, '')) > 0) {
+                console.warn(`Unit '${unit}' not recognized. Returning original value.`);
+                return length;
+            } else return '0';
         }
 
 
