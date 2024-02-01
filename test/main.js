@@ -30,6 +30,10 @@ describe('toRem Tests', () => {
         const result = toRem('0rem');
         equal(result, '0');
     });
+    it('return 0vw on toRem(\'0vw\')', () => {
+        const result = toRem('0vw');
+        equal(result, '0');
+    });
 
     it('return 0.25rem on toRem(4)', () => {
         const result = toRem(4);
@@ -54,6 +58,10 @@ describe('toRem Tests', () => {
     it('return 0.25rem on toRem(\'0.25rem\')', () => {
         const result = toRem('0.25rem');
         equal(result, '0.25rem');
+    });
+    it('return 5vw on toRem(\'5vw\')', () => {
+        const result = toRem('5vw');
+        equal(result, '5vw');
     });
 
 })
