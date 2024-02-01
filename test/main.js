@@ -4,6 +4,8 @@ import {toRem} from "../compressed/main.js";
 import {describe, it} from "node:test";
 import {equal} from "node:assert";
 
+process.env["unitTest"] = "on";
+
 describe('toRem Tests', () => {
 
     it('return 0 on toRem(0)', () => {
