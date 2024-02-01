@@ -56,6 +56,9 @@ npm install --save-dev @jamilservices/sb-module-to-rem
 yarn add --dev @jamilservices/sb-module-to-rem
 ~~~             
 
+> [!NOTE]
+> This will add the toRem module as a development dependency in your project.
+     
 #              
 - CDN:
 ~~~text
@@ -63,8 +66,6 @@ https://unpkg.com/@jamilservices/sb-module-to-rem@latest/src/main.js
 
 https://cdn.jsdelivr.net/gh/SimplyBuilder/sb-module-to-rem@latest/src/main.min.js
 ~~~             
-
-This will add the toRem module as a development dependency in your project.
 
 ## <span id="usage">Usage</span>
 [(go to top)](#sb-module-to-rem)   
