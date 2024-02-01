@@ -1,7 +1,7 @@
 {
   "name": "@jamilservices/sb-module-to-rem",
   "description": "Simply Builder Module - convert pixels to rem",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "main": "src/main.js",
   "types": "types.d.ts",
@@ -9,9 +9,9 @@
     "test": "node --test test/main.js",
     "tests:ci": "npm test",
     "generate:lock": "npm install --package-lock-only",
-    "commit:patch": "npm version patch --no-git-tag-version",
-    "commit:minor": "npm version minor --no-git-tag-version",
-    "commit:major": "npm version major --no-git-tag-version"
+    "version:patch": "npm version patch --no-git-tag-version",
+    "version:minor": "npm version minor --no-git-tag-version",
+    "version:major": "npm version major --no-git-tag-version"
   },
   "homepage": "https://simplybuilder.github.io",
   "repository": {
