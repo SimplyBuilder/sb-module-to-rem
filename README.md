@@ -39,31 +39,42 @@ This conversion is particularly useful for responsive web design, where rem unit
 ## <span id="installation">Installation</span>
 [(go to top)](#sb-module-to-rem)   
 To install the `toRem` function, use the following npm command:
-
-- from GitHub (npm/yarn):
+       
+- from GitHub (npm/yarn):       
 ~~~bash
 npm install --save-dev git+https://github.com/SimplyBuilder/sb-module-to-rem.git
 ~~~
 ~~~bash
 yarn add --dev git+https://github.com/SimplyBuilder/sb-module-to-rem.git
 ~~~
-
-- from npm (npm/yarn):
+       
+- from npm (npm/yarn):       
 ~~~bash
 npm install --save-dev @jamilservices/sb-module-to-rem
 ~~~
 ~~~bash
 yarn add --dev @jamilservices/sb-module-to-rem
-~~~
+~~~             
+
+#              
+- CDN:
+~~~text
+https://unpkg.com/@jamilservices/sb-module-to-rem@latest/src/main.js
+
+https://cdn.jsdelivr.net/gh/SimplyBuilder/sb-module-to-rem@latest/src/main.min.js
+~~~             
 
 This will add the toRem module as a development dependency in your project.
 
 ## <span id="usage">Usage</span>
 [(go to top)](#sb-module-to-rem)   
-Once installed, you can import the toRem function into your JavaScript project like so:
+Once installed, you can import the toRem function into your JavaScript project like so:    
+       
+- from install (npm/yarn):       
 ~~~javascript
 import { toRem } from '@jamilservices/sb-module-to-rem';
-~~~
+~~~      
+
 Now you can use the function in your project to convert length units to rem.
 
 
