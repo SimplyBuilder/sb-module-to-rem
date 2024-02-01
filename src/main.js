@@ -39,8 +39,6 @@ export const toRem = (length, decimal= 4) => {
                 return length;
             } else return '0';
         }
-
-
         if (tempLength > 0) value = ((1 / base) * tempLength);
         if (value > 0) return Number(parseFloat(value).toFixed(limitDecimal)) + 'rem';
         return "0";

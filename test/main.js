@@ -1,6 +1,6 @@
 "use strict";
 
-import {toRem} from "../compressed/main.js";
+import {toRem} from "../src/main.js";
 import {describe, it} from "node:test";
 import {equal} from "node:assert";
 
