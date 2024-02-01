@@ -73,7 +73,23 @@ Once installed, you can import the toRem function into your JavaScript project l
 - from install (npm/yarn):       
 ~~~javascript
 import { toRem } from '@jamilservices/sb-module-to-rem';
-~~~      
+~~~     
+#        
+- from cdn (html):
+~~~html
+<script type="module">
+import { toRem } from 'https://unpkg.com/@jamilservices/sb-module-to-rem@latest/src/main.js';
+// code
+</script>
+~~~     
+or     
+~~~html
+<script type="module">
+import { toRem } from 'https://cdn.jsdelivr.net/gh/SimplyBuilder/sb-module-to-rem@latest/src/main.min.js';
+// code
+</script>
+~~~
+#        
 
 Now you can use the function in your project to convert length units to rem.
 
