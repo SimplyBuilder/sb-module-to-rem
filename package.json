@@ -8,10 +8,10 @@
     "minify": "npx --yes minify-all-cli -s 'src' -d 'compressed'",
     "test": "npm run minify && node --test test/main.js",
     "tests:ci": "npm test",
+    "generate:lock": "npm install --package-lock-only",
     "commit:patch": "npm version patch --no-git-tag-version",
     "commit:minor": "npm version minor --no-git-tag-version",
-    "commit:major": "npm version major --no-git-tag-version",
-    "precommit": "npm test && npm run commit:patch"
+    "commit:major": "npm version major --no-git-tag-version"
   },
   "homepage": "https://simplybuilder.github.io",
   "repository": {
