@@ -1,12 +1,17 @@
 {
   "name": "@jamilservices/sb-module-to-rem",
   "description": "Simply Builder Module - convert pixels to rem",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "compressed/main.js",
   "scripts": {
-    "minify": "npx minify-all-cli -s 'src' -d 'compressed'",
-    "tests": "node --test test/main.js"
+    "minify": "npx --yes minify-all-cli -s 'src' -d 'compressed'",
+    "test": "npm run minify && node --test test/main.js",
+    "tests:ci": "npm test",
+    "commit:patch": "npm version patch --no-git-tag-version",
+    "commit:minor": "npm version minor --no-git-tag-version",
+    "commit:major": "npm version major --no-git-tag-version",
+    "precommit": "npm test && npm run commit:patch"
   },
   "homepage": "https://simplybuilder.github.io",
   "repository": {
