@@ -9,8 +9,8 @@ This conversion is particularly useful for responsive web design, where rem unit
 [![SimplyBuilder - sb-module-to-rem](https://img.shields.io/static/v1?label=SimplyBuilder&message=sb-module-to-rem&color=blue&logo=github)](https://github.com/SimplyBuilder/sb-module-to-rem)
 [![GitHub License](https://img.shields.io/github/license/SimplyBuilder/sb-module-to-rem)](https://github.com/SimplyBuilder/sb-module-to-rem/blob/main/LICENSE)
 
-![GitHub package.json dynamic](https://img.shields.io/github/package-json/version/SimplyBuilder/sb-module-to-rem)
-![GitHub Release](https://img.shields.io/github/v/release/SimplyBuilder/sb-module-to-rem)
+[![GitHub package.json dynamic](https://img.shields.io/github/package-json/version/SimplyBuilder/sb-module-to-rem)](https://github.com/SimplyBuilder/sb-module-to-rem/blob/main/package.json#L4)
+[![GitHub Release](https://img.shields.io/github/v/release/SimplyBuilder/sb-module-to-rem)](https://github.com/SimplyBuilder/sb-module-to-rem/releases)
 [![Test with Node.js](https://img.shields.io/badge/Node.js->=20_10-blue?logo=node.js&logoColor=white)](https://nodejs.org)
 
 [![npm - @jamilservices/sb-module-to-rem](https://img.shields.io/badge/npm-%40jamilservices%2Fsb--module--to--rem-blue?logo=npm&logoColor=white)](https://www.npmjs.com/package/@jamilservices/sb-module-to-rem)
