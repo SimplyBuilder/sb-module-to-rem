@@ -2,7 +2,8 @@
 ## Simply Builder Module - Convert Pixels, Points, and Ems to Rem
       
 The `toRem` function is a utility for converting length units (px, em, pt) to rem units in JavaScript.   
-This conversion is particularly useful for responsive web design, where rem units provide scalability and flexibility. The module simplifies the process of ensuring that elements scale proportionally across different screen sizes by leveraging the rem unit, which is based on the root element's font size.
+This conversion is particularly useful for responsive web design, where rem units provide scalability and flexibility. The module simplifies the process of ensuring that elements scale proportionally across different screen sizes by leveraging the rem unit, which is based on the root element's font size.     
+
 #
 [![SimplyBuilder](https://img.shields.io/badge/Author-Gerv%C3%A1sio_J%C3%BAnior-brightgreen?style=flat-square&color=%23fedcba)](https://github.com/jamilservicos)
 [![SimplyBuilder](https://img.shields.io/badge/SimplyBuilder-Module-brightgreen?style=flat-square&label=SimplyBuilder&color=%23fedcba)](https://simplybuilder.github.io)
@@ -15,7 +16,8 @@ This conversion is particularly useful for responsive web design, where rem unit
 
 [![npm - @jamilservices/sb-module-to-rem](https://img.shields.io/badge/npm-%40jamilservices%2Fsb--module--to--rem-blue?logo=npm&logoColor=white)](https://www.npmjs.com/package/@jamilservices/sb-module-to-rem)
 [![yarn - @jamilservices/sb-module-to-rem](https://img.shields.io/badge/yarn-%40jamilservices%2Fsb--module--to--rem-blue?logo=yarn&logoColor=white)](https://yarnpkg.com/package/@jamilservices/sb-module-to-rem)
-#
+#      
+
 ## Table of Contents
 - [Features](#features)
 - [Installation](#installation)

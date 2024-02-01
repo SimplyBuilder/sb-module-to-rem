@@ -3,9 +3,6 @@
 !.github/
 !.github/**
 
-!compressed/
-!compressed/**
-
 !.gitignore
 
 !README.md
@@ -20,6 +17,8 @@
 
 !test/
 !test/**
+
+!types.d.ts
 
 **/*~
 **/*.log
