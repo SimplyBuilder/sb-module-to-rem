@@ -119,6 +119,7 @@ Released under [MIT](/LICENSE) by [@jamilservicos](https://github.com/jamilservi
 [(go to top)](#sb-module-to-rem)   
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/-TypeScript-196cb2?style=for-the-badge&logo=typescript&logoColor=white)
 ![Nodejs](https://img.shields.io/badge/-Nodejs-339933?style=for-the-badge&logo=node-dot-js&logoColor=white)   
 
 #
