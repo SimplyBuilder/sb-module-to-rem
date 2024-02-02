@@ -1,7 +1,7 @@
 {
   "name": "@jamilservices/sb-module-to-rem",
   "description": "Simply Builder Module - convert pixels to rem",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "main": "src/main.js",
   "types": "types.d.ts",
