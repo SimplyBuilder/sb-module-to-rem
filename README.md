@@ -15,7 +15,13 @@ This conversion is particularly useful for responsive web design, where rem unit
 [![Test with Node.js](https://img.shields.io/badge/Node.js->=20_10-blue?logo=node.js&logoColor=white)](https://nodejs.org)
 
 [![npm - @jamilservices/sb-module-to-rem](https://img.shields.io/badge/npm-%40jamilservices%2Fsb--module--to--rem-blue?logo=npm&logoColor=white)](https://www.npmjs.com/package/@jamilservices/sb-module-to-rem)
-[![yarn - @jamilservices/sb-module-to-rem](https://img.shields.io/badge/yarn-%40jamilservices%2Fsb--module--to--rem-blue?logo=yarn&logoColor=white)](https://yarnpkg.com/package/@jamilservices/sb-module-to-rem)
+[![yarn - @jamilservices/sb-module-to-rem](https://img.shields.io/badge/yarn-%40jamilservices%2Fsb--module--to--rem-blue?logo=yarn&logoColor=white)](https://yarnpkg.com/package/@jamilservices/sb-module-to-rem)       
+
+
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/jamilservicessb-module-to-rem-hcxj3h?embed=1&hideDevTools=1&hideExplorer=1&hideNavigation=1&view=preview)
+
+
 #      
 
 ## Table of Contents
